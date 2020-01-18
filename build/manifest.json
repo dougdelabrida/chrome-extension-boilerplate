@@ -1,0 +1,35 @@
+{
+  "name": "chrome-extension-svelte",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Boilerplate for building svelte based chrome extension",
+  "homepage_url": "https://strongword.io",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_action": {
+    "default_title": "Chrome extension",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ]
+}

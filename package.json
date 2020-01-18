@@ -1,0 +1,20 @@
+{
+  "name": "chrome-extension-svelte",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Douglas Delabrida",
+  "license": "",
+  "scripts": {
+    "build": "rm -rf build && rollup --config rollup.config.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "@rollup/plugin-typescript": "^2.1.0",
+    "rollup": "^1.29.0",
+    "rollup-plugin-copy": "^3.2.1",
+    "rollup-plugin-svelte": "^5.1.1",
+    "svelte": "^3.17.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5"
+  }
+}
